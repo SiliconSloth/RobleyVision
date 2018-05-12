@@ -2,10 +2,10 @@
 import bluetooth, threading, serial, time, os
 import cv2
 # PyCharm seems to need this to work properly.
-try:
-    from cv2 import cv2
-except:
-    pass
+# try:
+#     from cv2 import cv2
+# except:
+#     pass
 
 
 # This script is used to record training videos, by manually controlling the robot with the RobleyRemote app.
