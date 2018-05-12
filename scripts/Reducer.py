@@ -1,10 +1,10 @@
 # Author: SiliconSloth 18/1/2018
 import cv2
 # PyCharm seems to need this to work properly.
-try:
-    from cv2 import cv2
-except:
-    pass
+# try:
+#     from cv2 import cv2
+# except:
+#     pass
 import numpy as np
 import cPickle
 
