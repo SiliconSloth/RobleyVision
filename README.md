@@ -16,7 +16,7 @@ RobleyVision works by comparing the images it is receiving from the camera to th
 
 The software compares two images by looking for distinctive feature points in them and seeing how these keypoints have moved between the images.  This allows it to calculate a median flow vector that summarizes how the scene in front of the camera has moved between the images, which tells the robot which direction it should move in to make the images look more similar.  For a more detailed explanation, see [Explanation.md](Explanation.md).
 
-<img src=images/video.png width="70%"/>
+[<img src=images/video.png width="70%"/>](https://www.youtube.com/watch?v=apFsauh_jL8)
 
 ## Hardware Requirements
 
