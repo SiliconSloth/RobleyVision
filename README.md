@@ -8,15 +8,21 @@ RobleyVision works best in environments where there are lots of distinctive visu
 
 Video: https://www.youtube.com/watch?v=apFsauh_jL8
 
+<img src=images/robot.jpg width="49%"/>
+
 ## How it Works
 
 RobleyVision works by comparing the images it is receiving from the camera to the current frame of the training video, to see how it needs to move so that the view from the camera matches the target frame.  Once the target and camera frames look sufficiently similar RobleyVision moves on to the next frame of the training video, gradually making its way through every frame of the video until it reaches its destination. 
 
 The software compares two images by looking for distinctive feature points in them and seeing how these keypoints have moved between the images.  This allows it to calculate a median flow vector that summarizes how the scene in front of the camera has moved between the images, which tells the robot which direction it should move in to make the images look more similar.  For a more detailed explanation, see [Explanation.md](Explanation.md).
 
+<img src=images/video.png width="70%"/>
+
 ## Hardware Requirements
 
 I tested this software on a differential wheeled robot that uses a laptop to run RobleyVision, connected via USB to a Tetrix Prizm controller running [RobleyMotor](https://github.com/SiliconSloth/RobleyMotor).  RobleyVision controls the robot by sending pairs of motor powers over USB to the controller, however it should be fairly easy to modify the code to accommodate other control methods.
+
+<img src=images/robotTop.jpg width="49%"/>
 
 RobleyVision requires a camera to be attached to the front of the robot, angled upwards so that the vanishing point (horizon) is at the bottom of the image (as explained in [Explanation.md](Explanation.md)).  There should not be any parts of the robot visible in the image, as this could confuse the median flow calculations, and the camera should stay in a fixed position relative to the robot at all times.  I used a USB webcam on the test robot, however the code will accept any camera that can be recognised by OpenCV, and could easily be modified to use those that can’t.  
 **The camera must be angled upwards, otherwise the software will not work.**
