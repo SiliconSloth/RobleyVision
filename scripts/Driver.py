@@ -1,14 +1,14 @@
 # Author: SiliconSloth 18/1/2018
-from threading import Thread, Timer
 
-import cv2
-# PyCharm seems to need this to work properly.
-try:
-    from cv2 import cv2
-except:
-    pass
+from threading import Thread, Timer
 import numpy as np
 import cPickle, serial, os, time, subprocess
+import cv2
+# PyCharm seems to need this to work properly.
+# try:
+#     from cv2 import cv2
+# except:
+#     pass
 
 
 # This script is responsible for actually driving the robot automatically.  It uses the reduced video and feature files
