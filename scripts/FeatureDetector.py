@@ -1,11 +1,12 @@
 # Author: SiliconSloth 18/1/2018
+
+import cPickle
 import cv2
 # PyCharm seems to need this to work properly.
 # try:
 #     from cv2 import cv2
 # except:
 #     pass
-import cPickle
 
 
 # This script finds key points and descriptors for each frame of a training video, for use in feature matching
