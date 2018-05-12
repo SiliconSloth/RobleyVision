@@ -1,12 +1,13 @@
 # Author: SiliconSloth 18/1/2018
+
+import numpy as np
+import cPickle
 import cv2
 # PyCharm seems to need this to work properly.
 # try:
 #     from cv2 import cv2
 # except:
 #     pass
-import numpy as np
-import cPickle
 
 
 # In a raw training video there is often very little difference between consecutive frames, so using every single frame of the video
