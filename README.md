@@ -6,7 +6,7 @@ There are likely more sophisticated and robust visual navigation solutions out t
 
 RobleyVision works best in environments where there are lots of distinctive visual features; large blank walls may make it difficult for the robot to orient itself.  The software may also be confused by environments where there are many features that look very similar, such as bushes or a room full of identical chairs.
 
-Video: (coming soon)
+Video: https://www.youtube.com/watch?v=apFsauh_jL8
 
 ## How it Works
 
