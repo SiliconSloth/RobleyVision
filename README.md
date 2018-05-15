@@ -27,7 +27,7 @@ I tested this software on a differential wheeled robot that uses a laptop to run
 RobleyVision requires a camera to be attached to the front of the robot, angled upwards so that the vanishing point (horizon) is at the bottom of the image (as explained in [Explanation.md](Explanation.md)).  There should not be any parts of the robot visible in the image, as this could confuse the median flow calculations, and the camera should stay in a fixed position relative to the robot at all times.  I used a USB webcam on the test robot, however the code will accept any camera that can be recognised by OpenCV, and could easily be modified to use those that can’t.  
 **The camera must be angled upwards, otherwise the software will not work.**
 
-Although RobleyVision was only tested on a laptop, it uses OpenCV’s fast FAST keypoint detector internally, so should hopefully be capable of running on less powerful hardware like a Raspberry Pi 2 or 3 at an acceptable framerate.
+Although RobleyVision was only tested on a laptop, it uses OpenCV’s fast FAST key point detector and binary feature descriptors, so should hopefully be capable of running on less powerful hardware like a Raspberry Pi 2 or 3 at an acceptable framerate.
 
 RobleyVision’s `Trainer.py` script requires the use of an Android phone running [RobleyRemote](https://github.com/SiliconSloth/RobleyRemote), however you can use some other method to generate training videos if you so wish.
 
